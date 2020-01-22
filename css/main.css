@@ -1,0 +1,38 @@
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0, 0, 0, .4);
+}
+.nav-link , .navbar-brand {
+    color: white;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #EEA76F;
+}
+.navbar-brand:hover {
+    color: #EEA76F;
+}
+.navbar-collapse{ 
+    justify-content: flex-end;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-toggler{
+    background: black !important;
+}
+.header {
+    background-image: url("/site/images/sunset.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+.overlay {
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+}
