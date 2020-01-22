@@ -30,6 +30,8 @@
 }
 .overlay {
     background-color: rgba(255, 255, 255, .6);
+    background-size: cover;
+    background-position: fixed;
     position: absolute;
     min-height: 100%;
     min-width: 100%;
