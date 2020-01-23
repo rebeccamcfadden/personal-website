@@ -11,8 +11,7 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <?php
-include $_GET['page'].".html";
+include "backdrop.php";
 include 'navbar.html';
-//include 'footer.html';
 ?>
 </html>
