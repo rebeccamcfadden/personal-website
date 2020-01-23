@@ -9,7 +9,6 @@ $(document).ready(function () {
         $("html, body").animate({ scrollTop: $(document).height() }, "slow");
         return false;
     });
-
 });
 $('.carousel').on('slid.bs.carousel', function () {
     var carouselData = $(this).data('bs.carousel');
@@ -19,4 +18,13 @@ $('.carousel').on('slid.bs.carousel', function () {
         .removeClass('active-p')
         .eq(currentIndex)
         .addClass('active-p');
+});
+$(document).ready(function () {
+    $(".fa-bars").click(function (event) {
+    event.preventDefault();
+    document.getElementById("navbarSupportedContent").classList.toggle('collapsed');
+    document.getElementById("navbarSupportedContent").classList.toggle('collapse');
+    console.log("is anyone there");
+    return false;
+});
 });

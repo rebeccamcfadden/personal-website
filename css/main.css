@@ -26,7 +26,6 @@ html {
 }
 .navbar-collapse{ 
     justify-content: flex-end;
-    font-family: 'Montserrat', sans-serif;
 }
 .header {
     background-image: url("../images/beach.jpg");
