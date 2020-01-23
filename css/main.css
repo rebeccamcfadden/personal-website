@@ -156,3 +156,22 @@ html {
     -o-transform: scale(1.1);
     transform: scale(1.1);
 }
+
+@media only screen and (max-width: 600px){
+  h1 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 12px;
+    font-size: smaller;
+  }
+  p {
+    font-size: 12px;;
+  }
+  ul, li {
+    font-size: 12px;
+  }
+}
