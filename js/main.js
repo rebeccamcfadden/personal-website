@@ -24,6 +24,13 @@ $(document).ready(function () {
     event.preventDefault();
     document.getElementById("navbarSupportedContent").classList.toggle('collapsed');
     document.getElementById("navbarSupportedContent").classList.toggle('collapse');
+    if (document.getElementById("navbarSupportedContent").classList.contains('collapsed')){
+        document.getElementsByClassName("navbar").setAttribute("style", "height: 16em;");
+    }
+    else{
+        document.getElementsByClassName("navbar").setAttribute("style", "height: 4em;");
+    }
+    
     console.log("is anyone there");
     return false;
 });
