@@ -155,11 +155,14 @@ html {
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
-}
+    }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
   h1 {
     font-size: 30px;
+  }
+  h2 {
+    font-size: 24px;
   }
   h3 {
     font-size: 18px;
@@ -168,10 +171,19 @@ html {
     font-size: 12px;
     font-size: smaller;
   }
-  p {
-    font-size: 12px;;
+  .description h6 {
+    font-size: 18px !important;
+  }
+  .description h1 {
+    font-size: 36px;
+  }
+  .about p {
+    font-size: 14px;;
   }
   ul, li {
     font-size: 12px;
+  }
+  .description{
+    top: 15%;
   }
 }
