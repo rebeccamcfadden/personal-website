@@ -177,6 +177,9 @@ html {
   .description h1 {
     font-size: 36px;
   }
+  p {
+    font-size: 12px;
+  }
   .about p {
     font-size: 14px;;
   }
