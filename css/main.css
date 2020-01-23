@@ -186,4 +186,7 @@ html {
   .description{
     top: 15%;
   }
+  .nav-link{
+    font-size: 14px;
+  }
 }
