@@ -10,8 +10,14 @@
   <script type="text/javascript" src='js/main.js'></script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-<?php
-include "backdrop.php";
-include 'navbar.html';
-?>
+<body>
+ <div id="page-container">
+   <div id="content-wrap">
+     <?php
+      include 'navbar.html';
+      include "backdrop.php";
+      ?>
+   </div>
+ </div>
+</body>
 </html>
