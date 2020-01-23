@@ -11,6 +11,7 @@ html {
     -webkit-box-shadow: 0 8px 6px -6px rgba(81, 82, 85, 0.7);;
     -moz-box-shadow: 0 8px 6px -6px rgba(81, 82, 85, 0.7);;
     box-shadow: 0 8px 6px -6px rgba(81, 82, 85, 0.7);
+    height: fit-content;
 }
 .nav-link , .navbar-brand {
     color: white;
@@ -24,7 +25,7 @@ html {
 .navbar-brand:hover {
     color: rgb(253, 194, 205);
 }
-.navbar-collapse{ 
+.navbar-collapse .collapsed{ 
     justify-content: flex-end;
 }
 .header {
@@ -40,6 +41,7 @@ html {
     position: absolute;
     min-height: 100%;
     min-width: 100%;
+    padding-top: 60px !important;
     left: 0;
     top: 0;
 }
@@ -74,6 +76,7 @@ html {
   background-color: white;
   position: relative;
   margin: 5%;
+  margin-top: 2%;
   padding: 2%;
   padding-top: 3%;
   -webkit-box-shadow: 0 12px 8px -8px rgba(81, 82, 85, 0.7);;
