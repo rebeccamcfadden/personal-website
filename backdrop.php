@@ -16,6 +16,7 @@
             echo '<style type="text/css">
                 .header {
                     position: relative;
+                    height: 100%;
                 }
                 @media only screen and (max-width: 800px){
                     .overlay {
