@@ -17,6 +17,14 @@
                 .header {
                     position: relative;
                 }
+                @media only screen and (max-width: 800px){
+                    .overlay {
+                        background-color: rgb(228, 228, 228);
+                    }
+                    .backdrop {
+                        height: fit-contents;
+                    }
+                }
                 </style>'; 
         }
         ?>
