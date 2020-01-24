@@ -1,11 +1,11 @@
 <?php
 
 
-    $from = 'Demo contact';
+    $from = 'rmcfadden';
     $sendTo = 'rmcfadden@tamu.edu';
     $subject = 'New message from website contact form';
-    $fields = array('first'=>'First', 'last'=>'Last', 'email'=>'Email', 'company'=>'Company', 'message'=>'Message');
-    $submitMessage = "Thank you for reaching out! I will get back to you as soon as possible.";
+    $fields = array('name'=>'Name', 'surname'=>'Surname', 'email'=>'Email', 'company'=>'Company', 'message'=>'Message');
+    $okMessage = "Thank you for reaching out! I will get back to you as soon as possible.";
     $errorMessage = "There was an error submitting the form. Please try again later.";
 
     error_reporting(E_ALL & ~E_NOTICE);
@@ -28,18 +28,16 @@
     }
     catch (\Exception $e){
         $responseArray = array('type' => 'danger', 'message' => $errorMessage);
+    }  
+    if ($responseArray['type'] == 'success') {
+        echo "<script type='text/javascript'>if(!alert('$okMessage')){window.location.assign('../index.php?page=contact');};</script>";
     }
-
-    // if requested by AJAX request return JSON response
-    if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+    else if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
         $encoded = json_encode($responseArray);
-
         header('Content-Type: application/json');
-
-        echo $encoded;
+        echo "<script type='text/javascript'>if(!alert('$encoded')){window.location.assign('../index.php?page=contact');};</script>";
     }
-    // else just display the message
     else {
-        echo $responseArray['message'];
+        echo "<script type='text/javascript'>if(!alert('$errorMessage')){window.location.assign('../index.php?page=contact');};</script>";    
     }
 ?>
