@@ -21,10 +21,17 @@ $('.carousel').on('slid.bs.carousel', function () {
 });
 $(document).ready(function () {
     $(".fa-bars").click(function (event) {
-    event.preventDefault();
-    document.getElementById("navbarSupportedContent").classList.toggle('collapsed');
-    document.getElementById("navbarSupportedContent").classList.toggle('collapse');
-    console.log("is anyone there");
-    return false;
+        event.preventDefault();
+        document.getElementById("navbarSupportedContent").classList.toggle('collapsed');
+        document.getElementById("navbarSupportedContent").classList.toggle('collapse');
+        document.getElementById("navigationbar").classList.toggle('colored');
+        return false;
+    });
 });
+
+$(function () {
+    $(document).scroll(function () {
+        var $nav = $(".navbar");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
 });

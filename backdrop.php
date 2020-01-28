@@ -20,7 +20,7 @@
                 }
                 @media only screen and (max-width: 800px){
                     .overlay {
-                        background-color: rgb(228, 228, 228);
+                        background-color: rgb(33, 66, 75);
                     }
                     .backdrop {
                         height: fit-contents;

@@ -10,6 +10,7 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src='js/main.js'></script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
 </head>
 <body>
  <div id="page-container">

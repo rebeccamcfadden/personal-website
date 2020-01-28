@@ -7,11 +7,15 @@ html {
 }
 .navbar {
     font-family: 'Montserrat', sans-serif;
-    background-color: rgba(0, 102, 128, .6);
-    -webkit-box-shadow: 0 8px 6px -6px rgba(81, 82, 85, 0.7);;
+    background-color: none;
+    height: fit-content;
+}
+.navbar.scrolled {
+  background-color: rgba(0, 102, 128, .6) !important;
+  transition: background-color 200ms linear;
+  -webkit-box-shadow: 0 8px 6px -6px rgba(81, 82, 85, 0.7);;
     -moz-box-shadow: 0 8px 6px -6px rgba(81, 82, 85, 0.7);;
     box-shadow: 0 8px 6px -6px rgba(81, 82, 85, 0.7);
-    height: fit-content;
 }
 .nav-link , .navbar-brand {
     color: white;
@@ -25,8 +29,11 @@ html {
 .navbar-brand:hover {
     color: rgb(253, 194, 205);
 }
-.navbar-collapse .collapsed{ 
-    justify-content: flex-end;
+.navbar.colored {
+    background-color: rgba(0, 102, 128, .6) !important;
+    -webkit-box-shadow: 0 8px 6px -6px rgba(81, 82, 85, 0.7);;
+    -moz-box-shadow: 0 8px 6px -6px rgba(81, 82, 85, 0.7);;
+    box-shadow: 0 8px 6px -6px rgba(81, 82, 85, 0.7);
 }
 .header {
     background-image: url("../images/beach.jpg");
@@ -37,7 +44,7 @@ html {
     top: 0;
 }
 .overlay {
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, 0.315);
     position: absolute;
     min-height: 100%;
     min-width: 100%;
@@ -67,7 +74,7 @@ html {
 .bottompanel {
   top: 95%;
   position: relative;
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(33, 66, 75);
   margin: 4em 0;
   padding: 2em;
   margin-bottom: 0;
@@ -75,6 +82,7 @@ html {
 .backdrop {
   background-color: white;
   position: relative;
+  overflow-y: hidden;
   margin: 5%;
   margin-top: 2%;
   padding: 2%;
@@ -154,6 +162,8 @@ html {
   -webkit-box-shadow: 0 12px 8px -8px rgba(81, 82, 85, 0.7);;
   -moz-box-shadow: 0 12px 8px -8px rgba(81, 82, 85, 0.7);;
   box-shadow: 0 12px 8px -8px rgba(81, 82, 85, 0.7);
+  height: 525px;
+  border-radius: 2%;
 }
 .card:hover, .card:active {
   -webkit-transform: scale(1.1);
@@ -162,8 +172,15 @@ html {
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
+.card-body{
+  overflow-y: scroll;
+}
+.wrapper {
+  height: 450px; 
+  overflow-y: scroll;
+}
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
   h1 {
     font-size: 30px;
   }
@@ -197,5 +214,13 @@ html {
   }
   .nav-link{
     font-size: 14px;
+  }
+  .backdrop {
+    overflow-y: visible;
+    height: fit-content;
+  }
+  .wrapper {
+    overflow-y: visible;
+    height: fit-content;
   }
 }
