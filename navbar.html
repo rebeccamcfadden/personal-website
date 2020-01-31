@@ -3,9 +3,18 @@
 <!--from freecodecamp.org -->
 <html>
     <head>
+        <script>
+            function hover(element) {
+                element.setAttribute('src', 'images/name1.png');
+            }
+
+            function unhover(element) {
+                element.setAttribute('src', 'images/name.png');
+            }    
+        </script>
         <nav class="navbar navbar-expand-lg fixed-top " id="navigationbar">
             <a class="navbar-brand" href="index.php?page=main">
-                <img src="images/name.png" alt="" style="height: 30px;">
+                <img src="images/name.png" alt="" onmouseover="hover(this);" onmouseout="unhover(this);" style="height: 30px;">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="navbar-toggler-icon collapsed" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="padding: 0; margin: 0;">
@@ -14,7 +23,7 @@
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link " data-value="resume" href="index.php?page=resume">Resume</a>
+                        <a class="nav-link " data-value="profimage" href="index.php?page=profimage">Prof. Image</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " data-value="portfolio" href="index.php?page=portfolio">Portfolio</a> </li>
