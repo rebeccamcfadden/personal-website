@@ -12,14 +12,27 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
 </head>
-<body>
- <div id="page-container">
-   <div id="content-wrap">
-     <?php
-      include 'navbar.html';
-      include "backdrop.php";
-      ?>
-   </div>
- </div>
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div id="page-container">
+      <div id="content-wrap">
+        <?php
+          include 'navbar.html';
+          include "backdrop.php";
+          ?>
+      </div>
+    </div>
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 1000);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("page-container").style.display = "block";
+      }
+    </script>
 </body>
 </html>
