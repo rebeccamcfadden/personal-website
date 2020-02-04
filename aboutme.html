@@ -3,6 +3,20 @@
 <head>
     <title>About Me: Rebecca McFadden</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function hover(img) {
+            element = document.getElementById('photo-display');
+            element.setAttribute('src', img);
+
+            element.setAttribute("style", "border-radius: 50%;")
+        }
+
+        function unhover() {
+            element = document.getElementById('photo-display');
+            element.setAttribute('src', 'images/ringSQ.png');
+            element.setAttribute("style", "border-radius: 0;")
+        }
+    </script>
 </head>
 <body>
 <div class="bottompanel" href="index.php?page=aboutme">
@@ -23,9 +37,15 @@
                             many other students groups on campus, such as Dance Arts Society and Hullabaloo Band.</p>
                         <br>
                         <p>
-                            Outside of school, I enjoy painting, reading, cooking/baking, dance, and tinkering with Raspberry Pis.
+                            Outside of school, I enjoy <a
+                                onmouseover="hover('images/painting.jpg');" onmouseout="unhover();">painting</a>,
+                                reading,
+                            cooking/baking, <a onmouseover="hover('images/dance.jpg');"
+                                onmouseout="unhover();">dance</a>, and
+                            tinkering with Raspberry Pis.
                             Though all of those are generally indoor activities, I like to spend a fair amount of time outdoors, whether
-                            that be running, hiking, or just sitting by the pool at my apartment.
+                            that be running, <a onmouseover="hover('images/seattle.jpg');" onmouseout="unhover();">hiking</a>, or just
+                            sitting by the pool at my apartment.
                         </p>
                         <br>
                         <p>
@@ -42,7 +62,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
-                    <img src="images/ringSQ.png" class="img-fluid">
+                    <img id="photo-display" src="images/ringSQ.png" class="img-fluid">
                     <br>
                     <h3>Connect with Me:</h3>
                     <div class="container-fluid">

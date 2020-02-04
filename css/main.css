@@ -281,6 +281,9 @@ html {
 	height: 450px; 
 	overflow-y: scroll;
 }
+.wrapper p a{
+	color: #3B5998 !important;
+}
 
 @media only screen and (max-width: 900px){
 	h1 {
@@ -365,4 +368,5 @@ html {
 		left: auto;
 		border-width: 10px 10px 10px 0;
 		border-color: transparent rgb(253, 194, 205) transparent transparent;
+	}
 }
