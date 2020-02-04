@@ -4,19 +4,111 @@
 </head>
 
 <body>
-    <div class="overlay">
-        <div class="backdrop" style="margin-bottom: 0; width: 80%; margin-left: 10%; background-position: center;">
-            <div class="container" style="margin-bottom: 2%;">
-                <div class="card-deck">
-
+    <div class="overlay" style="padding-top: 5%; background-color: rgb(33, 66, 75);">
+        <div class="backdrop" style="margin-bottom: 30px; width: 80%; margin-left: 10%; padding: 5%; background-position: center;">
+            <div class="container" style=" height: fit-content;">
+                <div class="timeline">
                     <!-- Honor Bot -->
-                    <div class="card">
+                    <div class="tcontainer right">
                         <a href="https://devpost.com/software/aggie-honor-bot-84i7kr" style="text-align:center;">
-                            <div class="card-header">
-                                <img src="images/honorbot.png" class="img-fluid projectimg"
-                                    style="border: 2px; max-height: 70px; border-radius: 50%; object-position: center;">
+                            <div class="t-icon">
+                                <img src="images/honorbot.png" class="content-img"
+                                    style="border: 2px; border-radius: 50%;">
                             </div>
                         </a>
+                        <div class="t-content">
+                            <div class="content-body">
+                                <h3 class="card-title">Aggie Honor Bot</h3>
+                                <h6 class="card-subtitle">GroupMe bot for TAMUHack</h6>
+                                <p> - Developed a bot to scan GroupMe messages for signs of cheating and alert members before reprecussions can occur.</p>
+                                <p> - Uses NLP and GroupMe REST API.</p>
+                            </div>
+                            <div class="content-footer card-footer">
+                                <span class="badge badge-info">Javascript</span>
+                                <span class="badge badge-info">PUG</span>
+                                <span class="badge badge-info">CSS</span>
+                                <span class="badge badge-info">Node.js</span>
+                                <span class="badge badge-info">Python</span>
+                                <span class="badge badge-info">REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fiest Finder -->
+                    <div class="tcontainer left">
+                        <a href="https://github.com/rebeccamcfadden/TBHunt" style="text-align:center;">
+                            <div class="t-icon">
+                                <img src="images/taco.png" class="content-img">
+                            </div>
+                        </a>
+                        <div class="t-content">
+                            <div class="content-body">
+                                <h3 class="card-title">Fiesta Finder</h3>
+                                <h6 class="card-subtitle">Web app for <a href="https://tamudatathon.com/">TAMU Datathon</a></h6>
+                                <p> - Developed a taco/burrito finding app using Python and Flask</p>
+                                <p> - Used menu data from Goldman Sachs to filter taco and burrito menu items based on
+                                    distance, item ingredients, and allergens</p>
+                            </div>
+                            <div class="content-footer card-footer">
+                                <span class="badge badge-info">Javascript</span>
+                                <span class="badge badge-info">Flask</span>
+                                <span class="badge badge-info">Python</span>
+                                <span class="badge badge-info">REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- On Edge -->
+                    <div class="tcontainer right">
+                        <a href="https://github.com/rebeccamcfadden/OnEdge" style="text-align:center;">
+                            <div class="t-icon">
+                                <img src="images/astronaut.png" class="content-img"
+                                style="border: 2px; border-radius: 50%;"> 
+                            </div>   
+                        </a>
+                        <div class="t-content">
+                            <div class="content-body">
+                                <h3 class="card-title">OnEdge</h3>
+                                <h6 class="card-subtitle">Arcade game for Microsoft Hackathon</h6>
+                                <p> - Developed a lightweight, mobile-friendly, offline game
+                                    for the new version of Microsoft Edge.</p>
+                                <p> - Collaborated with 6 other interns and a dev team from
+                                    Edge.</p>
+                            </div>
+                            <div class="content-footer card-footer">
+                                <span class="badge badge-info">Javascript</span>
+                                <span class="badge badge-info">HTML</span>
+                                <span class="badge badge-info">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Smart Cart -->
+                    <div class="tcontainer left">
+                        <a href="https://engineering.tamu.edu/news/2018/10/students-design-apps-in-48-hours-during-aggies-invent.html"
+                                style="text-align:center;">
+                            <div class="t-icon">
+                                <img src="images/smartcart.png" class="content-img">
+                            </div>
+                        </a>
+                        <div class="t-content">
+                            <div class="content-body">
+                                <h3 class="card-title">Smart Cart</h3>
+                                <h6 class="card-subtitle">Android app for Aggies Invent</h6>
+                                <p> - Won 3rd place and $500 for Smart Cart, a smart grocery shopping cart integrated app
+                                    design</p>
+                                <p> - Worked on a multidisciplinary team of 5 on a 48-hr app development invention/design
+                                    challenge by Aruba.
+                                    Networks</p>
+                            </div>
+                            <div class="content-footer card-footer">
+                                <span class="badge badge-info">Python</span>
+                                <span class="badge badge-info">Java</span>
+                                <span class="badge badge-info">Aruba Networks</span>
+                                <span class="badge badge-info">Android Studio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Honor Bot -->
+                    <!-- <div class="tcontainer right" image_src="images/honorbot.png">
+                        
                         <div class="card-body">
                             <h3 class="card-title">Aggie Honor Bot</h3>
                             <h6 class="card-subtitle">GroupMe bot for TAMUHack (Jan. 2020)</h6>
@@ -35,7 +127,7 @@
                     </div>
 
                     <!-- Fiest Finder -->
-                    <div class="card">
+                    <!-- <div class="tcontainer left">
                         <a href="https://github.com/rebeccamcfadden/TBHunt" style="text-align:center;">
                             <div class="card-header">
                                 <img src="images/taco.png" class="img-fluid projectimg"
@@ -57,37 +149,37 @@
                         </div>
                     </div>
 
-                    <!-- OnEdge -->
-                    <div class="card">
+                    OnEdge
+                    <div class="tcontainer right">
                         <a href="https://github.com/rebeccamcfadden/OnEdge" style="text-align:center;">
                             <div class="card-header">
                                 <img src="images/astronaut.png" class="img-fluid projectimg"
                                     style="border: 2px; max-height: 70px; border-radius: 50%; object-position: center;">
                             </div>
                         </a>
-                        <div class="card-body">
+                        <div class="">
                             <h3 class="card-title">OnEdge</h3>
                             <h6 class="card-subtitle">Arcade game for Microsoft Hackathon (July 2019)</h6>
                             <br>
                             <p> - Developed a lightweight, mobile-friendly, offline game for the new version of Microsoft Edge.</p>
                             <p> - Collaborated with 6 other interns and a dev team from Edge.</p>
                         </div>
-                        <div class="card-footer">
+                        <div class="">
                             <span class="badge badge-info">Javascript</span>
                             <span class="badge badge-info">HTML</span>
                             <span class="badge badge-info">CSS</span>
                         </div>
                     </div>
 
-                    <!-- Smart Cart -->
-                    <div class="card">
+                    <!-- Smart Cart 
+                    <div class="tcontainer left">
                         <a href="https://engineering.tamu.edu/news/2018/10/students-design-apps-in-48-hours-during-aggies-invent.html" style="text-align:center;">
                             <div class="card-header">
                                 <img src="images/smartcart.png" class="img-fluid projectimg"
                                     style="border: 2px; max-height: 70px; border-radius: 50%; object-position: center;">
                             </div>
                         </a>
-                        <div class="card-body">
+                        <div class="">
                             <h3 class="card-title">Smart Cart</h3>
                             <h6 class="card-subtitle">Android app for Aggies Invent (Sept. 2018)</h6>
                             <br>
@@ -97,13 +189,13 @@
                                 Networks
                             </p>
                         </div>
-                        <div class="card-footer">
+                        <div class="">
                             <span class="badge badge-info">Python</span>
                             <span class="badge badge-info">Java</span>
                             <span class="badge badge-info">Aruba Networks</span>
                             <span class="badge badge-info">Android Studio</span>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
