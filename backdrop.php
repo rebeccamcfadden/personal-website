@@ -3,30 +3,36 @@
 </head>
     <div class="header">
         <?php
-        include $_GET['page'].".html";
-        if($_GET['page'] == 'main'){
-            echo '<style type="text/css">
-                .header {
-                    position: absolute;
-                }
-                </style>'; 
-            include 'aboutme.html';
+        if($_GET['page'] == ""){
+            header('Location: index.php?page=main');
+           include $_GET['page'].".html"; 
         }
         else {
-            echo '<style type="text/css">
-                .header {
-                    position: relative;
-                    height: 100%;
-                }
-                @media only screen and (max-width: 800px){
-                    .overlay {
-                        background-color: rgb(33, 66, 75);
+            include $_GET['page'].".html"; 
+            if($_GET['page'] == 'main'){
+                echo '<style type="text/css">
+                    .header {
+                        position: absolute;
                     }
-                    .backdrop {
-                        height: fit-contents;
+                    </style>'; 
+                include 'aboutme.html';
+            }
+            else {
+                echo '<style type="text/css">
+                    .header {
+                        position: relative;
+                        height: 100%;
                     }
-                }
-                </style>'; 
+                    @media only screen and (max-width: 800px){
+                        .overlay {
+                            background-color: rgb(33, 66, 75);
+                        }
+                        .backdrop {
+                            height: fit-contents;
+                        }
+                    }
+                    </style>'; 
+            }
         }
         ?>
     </div>

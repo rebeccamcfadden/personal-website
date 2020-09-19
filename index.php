@@ -17,7 +17,7 @@
     <div id="page-container">
       <div id="content-wrap">
         <?php
-          include 'navbar.html';
+          include "navbar.html";
           include "backdrop.php";
           ?>
       </div>
